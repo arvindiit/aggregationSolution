@@ -21,12 +21,14 @@ This should be considered while evaluating the solution.
 
 ###### **From command line**
 
-mvn clean install
-java -jar target/aggregation-0.0.1-SNAPSHOT.jar
+build -> mvn clean install
+
+run -> java -jar target/aggregation-0.0.1-SNAPSHOT.jar
 
 ###### **From IDE(intellij)**
 
 import as maven project
+
 run as spring boot application(AggregationApplication)
 
 application runs on 8081 and it can be changed in application.properties
