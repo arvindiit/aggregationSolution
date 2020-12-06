@@ -1,13 +1,13 @@
-Design Approach
-++++++++++++
+#### **_Design Approach_**
+
 Event driven approach has been chosen. Every request will result into the collection
 of queue messages and published to respective queue in parllel. Other side of the queue,
 lies the services which will fetch the result from respective backend services.
 Scheduler are used to pick the messages from the queue. Scheduler  can be replaced with 
 the listeners in case of JMS queues.
 
-Development Approach
-+++++++++++++++++++++++
+#### **_Development Approach_**
+
 Solution is spring boot application with maven as build tool. It is modular in nature and developed
 to respect the SLA timeout agreement.
 
@@ -17,15 +17,15 @@ time constraint, these parts are less focused and with more time these can be fu
 
 This should be considered while evaluating the solution.
 
-Running the solution
-+++++++++++++++++++++
-From command line
-+++++
+#### **Running the solution**
+
+###### **From command line**
+
 mvn clean install
 java -jar target/aggregation-0.0.1-SNAPSHOT.jar
 
-From IDE(intellij)
-+++++++++
+###### **From IDE(intellij)**
+
 import as maven project
 run as spring boot application(AggregationApplication)
 
